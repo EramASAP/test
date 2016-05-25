@@ -2,7 +2,6 @@
 app.controller("HelloController", function($scope, $timeout, $interval, $http, URL){
 	
 	$scope.theTime = new Date().toLocaleTimeString();
-	alert(URL);
 	$interval(function () {
 	      $scope.theTime = new Date().toLocaleTimeString();
 	}, 1000);
@@ -22,14 +21,12 @@ app.controller("HelloController", function($scope, $timeout, $interval, $http, U
 	};
 	
 	$scope.submit = function() {
-		alert(URL+"hello?name="+$scope.name+"&email="+$scope.email+"&phone="+$scope.phone);
 		$http.post(URL+"hello?name="+$scope.name+"&email="+$scope.email+"&phone="+$scope.phone)
-		.then(function successCallback(response){
-			alert("SUccess");
-			console.log(response);
-		}, function errorCallback(response){
-			alert("failed");
-			console.log(response);
+		.success(function (response){
+			alert("Success");
+		})
+		.error(function(response){
+			alert("Success");
 		});
 	};
 });
