@@ -10,6 +10,6 @@
 <body>
 Hello World, <s:property value="name"/>
 Hello World, <s:property value="email"/>
-Hello World, <s:property value="phone"/>
+Hello Umesh, <s:property value="phone"/>
 </body>
 </html>
