@@ -31,7 +31,6 @@ public class HelloWorldAction {
 	}
 
 	public String execute() throws Exception {
-		System.out.println("F");
 	      return "success";
 	}
 }
