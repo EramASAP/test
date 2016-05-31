@@ -1,5 +1,17 @@
+app.directive("newDir", function(){
+	
+	
+	
+	 return {
+	        template : "This is from New directory"
+	    };
+});
 
-app.controller("HelloController", function($scope, $timeout, $interval, $http, URL){
+
+app.controller("HelloController", function($scope, $timeout, $interval, $http, $location){
+	
+	
+	var URL = $location.absUrl();
 	
 	$scope.theTime = new Date().toLocaleTimeString();
 	$interval(function () {

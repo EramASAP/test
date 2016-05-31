@@ -10,8 +10,8 @@
 <body ng-app="myApp" ng-controller="HelloController" ng-init="mySwitch = false">
 
 	<h1>Hello World From Struts2 + AngularJS</h1>
-	<h2>{{theTime}}</h2>
-	
+	<h2 >{{theTime}}</h2>
+	<div new-dir></div>
 	<p>
 		<input type="checkbox" ng-model="mySwitch">Click Me!
 	</p>
